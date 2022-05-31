@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_spacing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButtonDeleteSingleProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/default_spacing"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewSingleProduct"
+                app:layout_constraintStart_toStartOf="@+id/imageViewSingleProduct"
+                app:layout_constraintTop_toTopOf="@+id/imageViewSingleProduct"
+                app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+            <ImageView
+                android:id="@+id/imageViewSingleProduct"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_height"
+                android:transitionName="@string/transition_product_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_checkroom_24" />
+
+            <ImageView
+                android:id="@+id/imageViewSingleProductCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:background="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewSingleProduct"
+                app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24" />
+
+            <TextView
+                android:id="@+id/textViewSingleProductName"
+                style="@style/TextViewStyle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="#FFFFFF"
+                android:text="Product Name"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewSingleProductCart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewSingleProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:background="#FFFFFF"
+                android:drawableStart="@drawable/naira_icon"
+                android:text="price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSingleProductName" />
+            <!--            <a href="https://www.flaticon.com/free-icons/naira" title="naira icons">Naira icons created by Jagoan.jobs - Flaticon</a>-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
