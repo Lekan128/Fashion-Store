@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "994765792631",
+    "project_id": "fashion-store-ff066",
+    "storage_bucket": "fashion-store-ff066.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994765792631:android:98b78c255be617f4f5ad72",
+        "android_client_info": {
+          "package_name": "com.olalekan.fashionstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994765792631-g1v8bkuce3atkgtkgn19j1ngp07ge9cn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQnEaoWfeiWS3wUgxS9tQjLqxbZiN6tMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994765792631-g1v8bkuce3atkgtkgn19j1ngp07ge9cn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

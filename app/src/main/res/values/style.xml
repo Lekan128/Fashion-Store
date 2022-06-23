@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextViewStyle" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/TextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="font">@font/archivo_black</item>
+    </style>
+
+    <style name="SubTextViewStyle" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/TextColor</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="font">@font/amaranth</item>
+    </style>
+
+    <style name="LinkTextStyle" parent="@style/Widget.AppCompat.TextView">
+        <item name="color">@color/LinkBlue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CustomCardView" parent="@style/CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="backgroundColor">@color/white</item>
+    </style>
+
+<!--    <style name="buttom_navigation" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation"-->
+
+</resources>
